@@ -1,37 +1,18 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title> Gallery </title>
-       </head>
 </html>
 <body>
 <head>
-	<title>this is a title</title>
-	<link rel="stylesheet" href="clutter.css" type="text/css">
+	<title>Gallery</title>
+  <link href=" ICON LINK " rel="icon" type="image/x-icon" />
 </head>
 <style>
-      /* CLUTTER by GOODMODE */
-/* http://goodmode.neocities.org/ */
-
-
-/* BODY */
-/* This determines the page background and the base font size.
-	Feel free to change it, but please, PLEASE, I am begging you,
-	don't make it like 8px. Tiny fonts kill me and everyone else.
-	I MAY HAVE A VENDETTA... */
 
 body { 
-	background-color: #EDEDED;
+	background-image: url('')
 	font-size: 18px;
 	color: #4a4a4a;
 	margin: 30px;
 }
-
-/* PAGE CONTENT CONTAINER */
-/* This is the div that contains all the good stuff.
-	It doesn't look like much on its own, but it lets you
-	control the flexy layout and makes sure everything goes
-	in the right place. */
 
 .content {
 	display: flex;
@@ -39,59 +20,46 @@ body {
 	max-width: 100%;
 }
 
-/* NAVIGATION MENU */
-/* This is the menu box with the pagetitle and links in it,
-	as well as a picture of Tomoko from Watamote.
-	You can remove/replace her in the HTML file! */
-
-.nav {
-	float: left;
-	position: relative;
-	max-width: 250px;
-	min-width: 200px;
-	padding: 10px 10px 10px 10px;
-	background-color: #fff;
-	text-align: center;
-	border-radius: 10px;
-	background-image: url('texture.jpg');
-	color: #ffffff;
-	font-family: 'Courier New';
+	
+header {
+  grid-area: header;
+  font-size: 1.2em;
+  border: var(--border);
+  border-radius: var(--round-borders);
+  background-color: blue;
 }
 
-.nav img {
-	width: 100px;
-	border-radius: 100px;
+.header-content {
+  padding: var(--padding);
 }
 
-.nav ul {
-	list-style-type:none;
-	margin:0;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	padding-left: 0px;
-	padding-right: 0px;
-	background: rgba(0,0,0,0.7);
-	border-radius: 10px;
+.header-title {
+  font-family: var(--heading-font);
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
-.nav a:link, a:active, a:visited, a:hover {
-	font-weight: normal;
+.header-image img {
+  width: 100%;
+  height: auto;
 }
 
-.nav li:hover {
-	background-image: url('texture.jpg');
-}
 
-/* CONTENT BOXES */
-/* This bit controls what those white boxes full of text look like.
-	You could change the colour, the font, round off the corners,
-	or whatever you prefer. */
 
-.box {
+
+.square_box {
 	margin: 20px;
-	background: #fff;
-	padding: 10px 30px 10px 30px;
-	max-width: 600px;
+	padding: 5px 5px 5px 5px;
+	max-width: 300px;
+  max-height: 300px;
+}
+
+.rectangle_box {
+  background-color: yellow;
+  margin: 20px;
+	padding: 5px 5px 5px 5px;
+	max-width: 300px;
+  max-height: 500px;
 }
 
 /* GENERAL PAGE LINKS */
@@ -110,20 +78,7 @@ a:link, a:active, a:visited, a:hover {
 
 /* HEADERS */
 
-h1 {
-	font-family: 'Courier New';
-	font-size: 2em;
-	color: #ffffff;
-	font-weight: bold;
-	text-shadow: 
-		-1px -1px 0 #000,
-		1px -1px 0 #000,
-		-1px 1px 0 #000,
-		1px 1px 0 #000;
-	letter-spacing: 4px;
-	-webkit-margin-before: 0px;
-	-webkit-margin-after: 0px;
-}
+
 
 /* PARAGRAPHS AND BOLD/ITALICS ETC */
 
@@ -152,49 +107,55 @@ img {
 
 <div class="content">
 
-<div class="nav">
-	<h1>WHAT</h1>
-	<br>
-	<img src="coffee.png" title="describe the image here. this is a pic from Watamote">
-	<p>you could put a description here or just use it for the navigation bar</p>
-	<ul>
-		<li><a href="http://www.google.co.uk">Google</a></li>
-		<li><a href="http://crouton.net">Crouton</a></li>
-		<li><a href="http://www.ascii-middle-finger.com/">🖕</a></li>
-	</ul>
+<div class="header-content">
+	        <div class="header-title">Website Title</div>
+	        
+	        <!-- NAVIGATION -->
+	        <nav>
+	          <ul>
+	            <li><a href="/">Home</a></li>
+	            <li><a href="/page1">Page 1</a></li>
+	            <li><a href="/page2">Page 2</a></li>
+	            <li><a href="/page3">Page 3</a></li>
+	            <li>
+	                <strong>Submenu (hover to show)</strong>
+	                <ul>
+	                  <li><a href="/page-a">Page A</a></li>
+	                  <li><a href="/page-b">Page B</a></li>
+	                  <li><a href="/page-c">Page C</a></li>
+	                  <li><a href="/page-d">Page D</a></li>
+	                  <li><a href="/page-e">Page E</a></li>
+	                </ul>
+	            </li>
+	          </ul>
+	        </nav>
 </div>
 
 
-	<div class="box">
-		<p>Lorem ipsum dolor sit amet. The quick brown <a href="http://www.google.co.uk">fox</a> jumped over the lazy dog. The grumpy wizards make toxic brew for the evil queen and Jack. Lorem ipsum dolor sit amet. The quick brown fox jumped over the lazy dog. The grumpy wizards make toxic brew for the evil queen and Jack.</p>
-		<br><p>some other stuff. i dunno. <b>megatron</b> is a <i>memelord,</i> etc etc</p>
+	<div class="square_box">
+    <form action="/submit-url" method="post"></form>
+	<input type="image" src=
+"C:\Users\insan\Pictures\Screenshots\New folder\whatever\public\images\sk-sq-ch.PNG"
+		alt="Submit" width="200" height="200">
+    </form>
 	</div>
 
-	<div class="box">
-		<p>Lorem ipsum dolor sit amet. The quick brown <a href="http://www.google.co.uk">fox</a> jumped over the lazy dog. The grumpy wizards make toxic brew for the evil queen and Jack. Lorem ipsum dolor sit amet. The quick brown fox jumped over the lazy dog. The grumpy wizards make toxic brew for the evil queen and Jack.</p>
-		<br><p>some other stuff. i dunno. <b>megatron</b> is a <i>memelord,</i> etc etc</p>
+	<div class="rectangle_box">
+		 <form action="/submit-url" method="post">
+	<input type="image" src=
+" LINK HERE "
+		alt="Submit" width="200" height="200">
+	</form>
 	</div>
-	
-	<div class="box">
-		<p>Lorem ipsum dolor sit amet. The quick brown <a href="http://www.google.co.uk">fox</a> jumped over the lazy dog. The grumpy wizards make toxic brew for the evil queen and Jack. Lorem ipsum dolor sit amet. The quick brown fox jumped over the lazy dog. The grumpy wizards make toxic brew for the evil queen and Jack.</p>
-		<br><p>some other stuff. i dunno. <b>megatron</b> is a <i>memelord,</i> etc etc</p>
+
+		<div class="rectangle_box">
+		 <form action="/submit-url" method="post">
+	<input type="image" src=
+" LINK HERE "
+		alt="Submit" width="200" height="200">
+	</form>
 	</div>
-	
-	<div class="box">
-		<p>Lorem ipsum dolor sit amet. The quick brown <a href="http://www.google.co.uk">fox</a> jumped over the lazy dog. The grumpy wizards make toxic brew for the evil queen and Jack. Lorem ipsum dolor sit amet. The quick brown fox jumped over the lazy dog. The grumpy wizards make toxic brew for the evil queen and Jack.</p>
-		<br><p>some other stuff. i dunno. <b>megatron</b> is a <i>memelord,</i> etc etc</p>
-	</div>
-	
-	<div class="box">
-		<p>Lorem ipsum dolor sit amet. The quick brown <a href="http://www.google.co.uk">fox</a> jumped over the lazy dog. The grumpy wizards make toxic brew for the evil queen and Jack. Lorem ipsum dolor sit amet. The quick brown fox jumped over the lazy dog. The grumpy wizards make toxic brew for the evil queen and Jack.</p>
-		<br><p>some other stuff. i dunno. <b>megatron</b> is a <i>memelord,</i> etc etc</p>
-	</div>
-	
-	<div class="box">
-		<p>Lorem ipsum dolor sit amet. The quick brown <a href="http://www.google.co.uk">fox</a> jumped over the lazy dog. The grumpy wizards make toxic brew for the evil queen and Jack. Lorem ipsum dolor sit amet. The quick brown fox jumped over the lazy dog. The grumpy wizards make toxic brew for the evil queen and Jack.</p>
-		<br><p>some other stuff. i dunno. <b>megatron</b> is a <i>memelord,</i> etc etc</p>
-	</div>
-</div>
+
 
 </body>
 
