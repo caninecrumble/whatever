@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Gallery </title>
+       </head>
+</html>
+<body>
+<head>
+	<title>this is a title</title>
+	<link rel="stylesheet" href="clutter.css" type="text/css">
+</head>
+<style>
+      /* CLUTTER by GOODMODE */
+/* http://goodmode.neocities.org/ */
+
+
+/* BODY */
+/* This determines the page background and the base font size.
+	Feel free to change it, but please, PLEASE, I am begging you,
+	don't make it like 8px. Tiny fonts kill me and everyone else.
+	I MAY HAVE A VENDETTA... */
+
+body { 
+	background-color: #EDEDED;
+	font-size: 18px;
+	color: #4a4a4a;
+	margin: 30px;
+}
+
+/* PAGE CONTENT CONTAINER */
+/* This is the div that contains all the good stuff.
+	It doesn't look like much on its own, but it lets you
+	control the flexy layout and makes sure everything goes
+	in the right place. */
+
+.content {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 100%;
+}
+
+/* NAVIGATION MENU */
+/* This is the menu box with the pagetitle and links in it,
+	as well as a picture of Tomoko from Watamote.
+	You can remove/replace her in the HTML file! */
+
+.nav {
+	float: left;
+	position: relative;
+	max-width: 250px;
+	min-width: 200px;
+	padding: 10px 10px 10px 10px;
+	background-color: #fff;
+	text-align: center;
+	border-radius: 10px;
+	background-image: url('texture.jpg');
+	color: #ffffff;
+	font-family: 'Courier New';
+}
+
+.nav img {
+	width: 100px;
+	border-radius: 100px;
+}
+
+.nav ul {
+	list-style-type:none;
+	margin:0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 0px;
+	padding-right: 0px;
+	background: rgba(0,0,0,0.7);
+	border-radius: 10px;
+}
+
+.nav a:link, a:active, a:visited, a:hover {
+	font-weight: normal;
+}
+
+.nav li:hover {
+	background-image: url('texture.jpg');
+}
+
+/* CONTENT BOXES */
+/* This bit controls what those white boxes full of text look like.
+	You could change the colour, the font, round off the corners,
+	or whatever you prefer. */
+
+.box {
+	margin: 20px;
+	background: #fff;
+	padding: 10px 30px 10px 30px;
+	max-width: 600px;
+}
+
+/* GENERAL PAGE LINKS */
+
+a:link, a:active, a:visited, a:hover {
+	font-weight: bold;
+	text-decoration: none;
+	text-shadow: 
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
+/* HEADERS */
+
+h1 {
+	font-family: 'Courier New';
+	font-size: 2em;
+	color: #ffffff;
+	font-weight: bold;
+	text-shadow: 
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+	letter-spacing: 4px;
+	-webkit-margin-before: 0px;
+	-webkit-margin-after: 0px;
+}
+
+/* PARAGRAPHS AND BOLD/ITALICS ETC */
+
+p {
+	font-family: 'Courier New';
+	color: #000;
+}
+
+b {
+	font-weight: bold;
+	color: green;
+}
+
+i {
+	color: 6a006a;
+}
+
+/* MAKE SURE IMAGES NEVER STRETCH THE PAGE */
+
+img {
+	max-width: 100%;
+}
+    </style>
+
+<body>
+
+<div class="content">
+
+<div class="nav">
+	<h1>WHAT</h1>
+	<br>
+	<img src="coffee.png" title="describe the image here. this is a pic from Watamote">
+	<p>you could put a description here or just use it for the navigation bar</p>
+	<ul>
+		<li><a href="http://www.google.co.uk">Google</a></li>
+		<li><a href="http://crouton.net">Crouton</a></li>
+		<li><a href="http://www.ascii-middle-finger.com/">🖕</a></li>
+	</ul>
+</div>
+
+
+	<div class="box">
+		<p>Lorem ipsum dolor sit amet. The quick brown <a href="http://www.google.co.uk">fox</a> jumped over the lazy dog. The grumpy wizards make toxic brew for the evil queen and Jack. Lorem ipsum dolor sit amet. The quick brown fox jumped over the lazy dog. The grumpy wizards make toxic brew for the evil queen and Jack.</p>
+		<br><p>some other stuff. i dunno. <b>megatron</b> is a <i>memelord,</i> etc etc</p>
+	</div>
+
+	<div class="box">
+		<p>Lorem ipsum dolor sit amet. The quick brown <a href="http://www.google.co.uk">fox</a> jumped over the lazy dog. The grumpy wizards make toxic brew for the evil queen and Jack. Lorem ipsum dolor sit amet. The quick brown fox jumped over the lazy dog. The grumpy wizards make toxic brew for the evil queen and Jack.</p>
+		<br><p>some other stuff. i dunno. <b>megatron</b> is a <i>memelord,</i> etc etc</p>
+	</div>
+	
+	<div class="box">
+		<p>Lorem ipsum dolor sit amet. The quick brown <a href="http://www.google.co.uk">fox</a> jumped over the lazy dog. The grumpy wizards make toxic brew for the evil queen and Jack. Lorem ipsum dolor sit amet. The quick brown fox jumped over the lazy dog. The grumpy wizards make toxic brew for the evil queen and Jack.</p>
+		<br><p>some other stuff. i dunno. <b>megatron</b> is a <i>memelord,</i> etc etc</p>
+	</div>
+	
+	<div class="box">
+		<p>Lorem ipsum dolor sit amet. The quick brown <a href="http://www.google.co.uk">fox</a> jumped over the lazy dog. The grumpy wizards make toxic brew for the evil queen and Jack. Lorem ipsum dolor sit amet. The quick brown fox jumped over the lazy dog. The grumpy wizards make toxic brew for the evil queen and Jack.</p>
+		<br><p>some other stuff. i dunno. <b>megatron</b> is a <i>memelord,</i> etc etc</p>
+	</div>
+	
+	<div class="box">
+		<p>Lorem ipsum dolor sit amet. The quick brown <a href="http://www.google.co.uk">fox</a> jumped over the lazy dog. The grumpy wizards make toxic brew for the evil queen and Jack. Lorem ipsum dolor sit amet. The quick brown fox jumped over the lazy dog. The grumpy wizards make toxic brew for the evil queen and Jack.</p>
+		<br><p>some other stuff. i dunno. <b>megatron</b> is a <i>memelord,</i> etc etc</p>
+	</div>
+	
+	<div class="box">
+		<p>Lorem ipsum dolor sit amet. The quick brown <a href="http://www.google.co.uk">fox</a> jumped over the lazy dog. The grumpy wizards make toxic brew for the evil queen and Jack. Lorem ipsum dolor sit amet. The quick brown fox jumped over the lazy dog. The grumpy wizards make toxic brew for the evil queen and Jack.</p>
+		<br><p>some other stuff. i dunno. <b>megatron</b> is a <i>memelord,</i> etc etc</p>
+	</div>
+</div>
+
+</body>
+
+</html>
